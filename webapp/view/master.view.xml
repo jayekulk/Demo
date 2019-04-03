@@ -3,7 +3,7 @@
 		<content>
 			<!--<Button text="Button" width="100px" id="__button0" icon="sap-icon://create"/>-->
 			
-			<List items="{Product>/ProductCollection}" headerText="Products">
+			<List items="{Product>/ProductCollection}" headerText="Products Demo">
 				<items>
 					<ObjectListItem title="{Product>Name}" type="Active" icon="{Product>ProductPicUrl}" number="{ parts:[{path:'Product>Price'},{path:'Product&gt;CurrencyCode'} ],       type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }" numberUnit="{Product>CurrencyCode} " press="onPress">
 						<firstStatus>
