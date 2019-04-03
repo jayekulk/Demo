@@ -1,0 +1,26 @@
+/* Enter your custom styles here */
+.first{
+	margin-left: 600px;
+}
+
+#__xmlview6--__label1
+{
+	color : orange;
+font-size :50px;
+}
+#__xmlview6--label10
+{
+		color : green;
+font-size :25px;
+}
+
+#__xmlview6--__label2{
+	color : green;
+font-size :25px;	
+}
+#__xmlview6--__label3{
+	font-weight : bold;
+}
+#__xmlview6--__label4{
+		font-weight : bold;
+}

@@ -1,0 +1,13 @@
+<mvc:View controllerName="Project1.controller.HomePage" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="app1">
+			<SplitApp id="SplitApp"  orientationChange="onOrientationChange">
+			<detailPages>
+					 <mvc:XMLView viewName="Project1.view.detail"/>
+			</detailPages>
+			<masterPages>
+				 <mvc:XMLView viewName="Project1.view.master"/>
+			</masterPages>
+		</SplitApp>
+	</App>
+</mvc:View>

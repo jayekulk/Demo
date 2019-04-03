@@ -1,0 +1,41 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Project1.controller.detail">
+	<App>
+		<pages>
+			<Page title="Product Details">
+				<content>
+					<Button text= "pdf" id="pdf"  press="pdf"/>
+					<Input width="30%" id="input10" editable="false" value="{Product>ProductId}" visible="false"/>
+					<Label text="{Product>Name}" width="100%" id="__label1" class="item"/>
+					<Label text="{Product>Price} EUR" width="100%" id="label10"/>
+					<Image width="240px" height="140px" id="__image0" class="first" src="{Product>ProductPicUrl}"/>
+					<Label text="Status={Product>Status}" width="100%" id="__label2"/>
+					<Label text="Contact Details = {Product>Contact_no}" width="100%" id="__label3"/>
+					<Label text="Delievery Details  = {Product>Delievery_Details}" width="100%" id="__label4"/>
+					<IconTabBar selectedKey="__filter0" id="__bar0">
+						<items>
+							<IconTabFilter text="Item" showAll="true" id="__filter0">
+								<content>
+									<Label text="Item name" width="100%" id="__label6"/>
+									<Input width="30%" id="input7" editable="false" value="{Product>Name}"/>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter text=" Description" iconColor="Critical" id="__filter1" icon="sap-icon://accelerated">
+								<content>
+									<Label text="Item Description" width="100%" id="__label5"/>
+									<Input width="70%" editable="false" id="input8" value="{Product>Description}"/>
+								</content>
+							</IconTabFilter>
+							<IconTabFilter icon="sap-icon://shipping-status" iconColor="Positive" id="__filter2" text="Order">
+								<content>
+									<Label text="No. of units" width="30%" id="__label7"/>
+									<Input width="30%" id="__input0"/>
+								</content>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					<Button text="Order now" width="100px" id="__button0" press="onOrderNow"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
